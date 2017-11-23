@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2" >
+
+    <TextView
+        android:id="@+id/lable"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#436EEE"
+        android:gravity="fill_vertical"
+        android:text="   用户登录"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" 
+        android:textStyle="bold"/>
+    
+     <TextView
+         android:id="@+id/huanyin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lable"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="欢迎使用电气助手APP"
+        android:textStyle="italic"
+        android:textColor="#436EEE"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/user" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/user"
+        android:hint="请输入您的身份证号"
+        android:textColor="#000000"
+        android:textColorHint="#8C8C8C"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/password"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/user"
+        android:layout_below="@+id/user"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/password" />
+
+    <EditText
+        android:id="@+id/editnumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignRight="@+id/edirname"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/password"
+        android:hint="请输入密码"
+        android:textColor="#000000"
+        android:textColorHint="#8C8C8C"
+        android:textSize="15sp" 
+        android:password="true"/>
+
+    <CheckBox
+        android:id="@+id/keepuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:text="记住帐号密码"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/keeplogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/keepuser"
+        android:clickable="true"
+        android:text="保持登录状态"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:background="#7FFF00"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/login"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/login"
+        android:background="#EE4000"
+        android:gravity="center"
+        android:text="游客身份登录"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" 
+        android:textStyle="bold">
+    </Button>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/paddingView6"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/normal_bottomline"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/title8word_marginleft"
+            android:gravity="center"
+            android:text="@string/fault"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/headpicture"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/back_marginleft"
+            android:background="@drawable/icon" >
+        </Button>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/headpicture" 
+                    android:text="张冰洁"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview1"
+        style="@array/ctype"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        android:dividerHeight="3dp"
+        android:entries="@array/ctype"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+</LinearLayout>

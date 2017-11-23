@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_word_items"
+    android:layout_width="50sp"
+    android:layout_height="50sp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/search_item_image"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/redhome" />
+
+    <TextView
+        android:id="@+id/search_item_info"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="this is project info"
+        android:textSize="20sp" 
+        android:textColor="#000000"/>
+
+</LinearLayout>

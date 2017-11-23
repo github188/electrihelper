@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">电气助手</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="searching">搜索</string>
+    <string name="number">号码和密码</string>
+    <string name="instruction">说明书</string>
+    <string name="drawing">图纸</string>
+    <string name="constantvalue">保护定值</string>
+    <string name="fault">常见故障及其处理</string>
+    <string name="homepage">首页</string>
+    <string name="help">帮助</string>
+    <string name="suggestion">意见反馈</string>
+    <string name="maintenance">日常维护工作</string>
+    <string name="suggestiontext">希望解决的问题和建议:</string>
+    <string name="handle">期待的处理方式:</string>
+    <string name="howlong">希望多长时间解决您的问题:</string>
+    <string name="sure">确认></string>
+    <string name="headview">headview</string>
+    <string name="footview">footview</string>
+    <string name="home">首页</string>
+    <string name="add">添加定期维护工作</string>
+    <string name="addname">定期维护工作名称:</string>
+    <string name="addstarttime">定期维护工作开始时间:</string>
+    <string name="addkeeptime">定期维护工作持续时间:</string>
+    <string name="addcycle">定期维护工作周期:</string>
+    <string name="addman">定期维护工作主要负责人:</string>
+    <string name="save">保存</string>
+    <string name="descrip">请简要描述工作名称</string>
+    <string name="setting">设置</string>
+    <string name="recent">最近查看资料</string>
+    <string name="waitforhandle">待处理问题</string>
+    <string name="text">个人备忘录</string>
+    <string name="storehouse">库房物资</string>
+    <string name="workitem">工作项目表</string>
+    <string name="button_add">添加</string>
+    <string name="edittime">自定义时间</string>
+    <string name="formula">公式</string>
+
+</resources>

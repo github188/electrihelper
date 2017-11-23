@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/paddingView3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/normal_bottomline"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/title4word_marginleft"
+            android:gravity="center"
+            android:text="@string/constantvalue"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/back" >
+        </Button>
+        </RelativeLayout>
+
+  <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:text="@string/action_settings" >
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView3"
+            android:layout_width="400sp"
+            android:layout_height="40sp"
+            android:completionHint="输入搜索内容"
+            android:completionThreshold="2"
+            android:textSize="17sp" 
+            android:textColor="#000000">
+        </AutoCompleteTextView>
+
+        <Button
+            android:id="@+id/consrsearchbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_alignRight="@id/autoCompleteTextView3"
+            android:layout_marginLeft="10dp"
+            android:background="#FFEBCD"
+            android:gravity="center"
+            android:text="@string/searching"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="italic" />
+        <GridView
+            android:id="@+id/conssearchgridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/autoCompleteTextView3"
+            android:numColumns="2" >
+        </GridView>
+    </RelativeLayout>
+
+</LinearLayout>

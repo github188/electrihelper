@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="time">
+        <item>1个工作日</item>
+        <item>10个工作日</item>
+        <item>1个月</item>
+        <item>2个月</item>
+    </string-array>
+    <string-array name="keeptime">
+        <item>1天</item>
+        <item>2天</item>
+        <item>3天</item>
+        <item>7天</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="cycletime">
+        <item>1个月</item>
+        <item>2个月</item>
+        <item>3个月</item>
+        <item>6个月</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="ctype">
+        <item>直流系统故障</item>
+        <item>励磁系统故障</item>
+        <item>风冷控制箱故障</item>
+        <item>发变组故障</item>
+        <item>等离子故障</item>
+        <item>电除尘故障</item>
+        <item>其他故障</item>
+    </string-array>
+    <string-array name="workername">
+        <item>刘庆</item>
+        <item>邝中魁</item>
+        <item>周伟才</item>
+        <item>王宪天</item>
+        <item>冯宇航</item>
+        <item>左巽</item>
+        <item>张超</item>
+        <item>颜莎</item>
+        <item>吕雪</item>
+        <item>张冰洁</item>
+        <item>宋瑶</item>
+        <item>李娟</item>
+        <item>曾鹏</item>
+    </string-array>
+      <string-array name="menu">
+        <item>设置</item>
+        <item>最近查看资料</item>
+        <item>待处理问题</item>
+        <item>个人备忘录</item>
+        <item>库房物资</item>
+    </string-array>
+      <string-array name="formula">
+        <item>厂用系统短路阻抗计算公式</item>
+        <item>380V继电保护计算公式</item>
+    </string-array>
+
+</resources>

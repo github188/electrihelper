@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/normal_bottomline"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/title2word_marginleft"
+            android:gravity="center"
+            android:text="@string/help"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/headpicture"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/back_marginleft"
+            android:background="@drawable/icon" >
+        </Button>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/headpicture"
+            android:text="张冰洁"
+            android:textColor="#000000"
+            android:textSize="18sp" 
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:text="@string/action_settings" >
+
+        <TextView
+            android:id="@+id/maintenance"
+            android:layout_width="250sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50sp"
+            android:background="@drawable/normal_background"
+            android:gravity="center"
+            android:text="定 期 维 护 工 作"
+            android:textColor="#141414"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/suggestion"
+            android:layout_width="250sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50sp"
+            android:background="@drawable/normal_background"
+            android:gravity="center"
+            android:text="意 见 反 馈"
+            android:textColor="#141414"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

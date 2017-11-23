@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <View
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/normal_bottomline"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="@string/add"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:textStyle="normal" >
+        </TextView>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/back" >
+        </Button>
+
+        <Button
+            android:id="@+id/worksavebutton"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/theme"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/theme"
+            android:background="@drawable/buttonbackground"
+            android:text="@string/save"
+            android:textColor="#141414"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/addname"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/addname"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editname"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/addname"
+                android:background="@drawable/normal_bottomline"
+                android:hint="@string/descrip"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#ADADAD"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/addstarttime"
+                android:layout_width="165dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/addstarttime"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置" >
+            </Button>
+
+            <TextView
+                android:id="@+id/dialog_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#141414"
+                android:textSize="14sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/addkeeptime"
+                android:layout_width="165dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/addkeeptime"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/keeptimespinner"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:entries="@array/keeptime"
+                android:theme="@android:style/Theme.Holo" >
+            </Spinner>
+
+            <EditText
+                android:id="@+id/editkeeptime"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/small_buttomine"
+                android:textColor="#141414"
+                android:hint="@string/edittime"
+                android:textColorHint="#ADADAD"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/addcycle"
+                android:layout_width="165dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/addcycle"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/cycletimespinner"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:entries="@array/cycletime"
+                android:theme="@android:style/Theme.Holo" >
+            </Spinner>
+
+            <EditText
+                android:id="@+id/editcycletime"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/small_buttomine"
+                android:textColor="#141414"
+                android:hint="@string/edittime"
+                android:textSize="15sp" 
+                android:textColorHint="#ADADAD"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/wokername"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/addman"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <GridView
+            android:id="@+id/namecheckgrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/workername"
+            android:numColumns="4"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/selectall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选" >
+            </Button>
+
+            <Button
+                android:id="@+id/selectnone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消全选" >
+            </Button>
+
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

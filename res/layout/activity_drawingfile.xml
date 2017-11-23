@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical"
+    tools:ignore="TextFields" >
+
+    <View
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/normal_bottomline"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/theme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/back_marginleft"
+            android:background="@drawable/back" >
+        </Button>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:text="机组:"
+                android:textColor="#141414"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/unit"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/small_buttomine"
+                android:inputType=""
+                android:textColor="#141414"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:text="图号:"
+                android:textColor="#141414"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/small_buttomine"
+                android:textColor="#141414"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/select"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#B0E2FF"
+                android:text="查询"
+                android:textColor="#141414"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/insert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#B0E2FF"
+                android:text="添加"
+                android:textColor="#141414"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#B0E2FF"
+                android:text="修改"
+                android:textColor="#141414"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/drawingfilelist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

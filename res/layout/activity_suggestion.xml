@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/normal_bottomline"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/title4word_marginleft"
+            android:gravity="center"
+            android:text="@string/suggestion"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:textStyle="normal" >
+        </TextView>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/back" >
+        </Button>
+
+        <Button
+            android:id="@+id/suggestionsavebutton"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/theme"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"
+            android:layout_toRightOf="@id/theme"
+            android:background="@drawable/buttonbackground"
+            android:text="保存"
+            android:textColor="#141414"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="@string/suggestiontext"
+            android:textColor="#999999"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/suggestionedit"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/normal_background"
+            android:gravity="start"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="@string/handle"
+            android:textColor="#999999"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/handleedit"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/normal_background"
+            android:gravity="start"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/timetext"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:text="@string/howlong"
+                android:textColor="#999999"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/timespinner"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/timetext"
+                android:entries="@array/time"
+                android:theme="@android:style/Theme.Holo" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+        <android.support.v4.app.FragmentTabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2F2F2" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" >
+            </FrameLayout>
+        </android.support.v4.app.FragmentTabHost>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+                 <Button
+            android:id="@+id/headpicture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/icon" 
+            android:paddingLeft="100dp"
+            />
+
+         <TextView
+             android:id="@+id/username"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="张冰洁"
+             android:textColor="#000000"
+             android:textSize="18sp" />
+            
+        <Button
+            android:id="@+id/btn_left1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/setting" />
+
+        <Button
+            android:id="@+id/btn_left2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/recent" />
+
+        <Button
+            android:id="@+id/btn_left3"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/waitforhandle" />
+
+        <Button
+            android:id="@+id/btn_left4"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/text" />
+
+        <Button
+            android:id="@+id/btn_left5"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/storehouse" />
+    </LinearLayout>
+
+   
+
+</android.support.v4.widget.DrawerLayout>
