@@ -4,7 +4,7 @@ import model.ContactInfo;
 import model.FaultInfo;
 import model.ManuInfo;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import android.support.v4.app.Fragment;
 

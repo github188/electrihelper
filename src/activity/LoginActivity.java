@@ -2,7 +2,7 @@ package activity;
 
 import model.UserInfo1;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import android.app.Activity;
 import android.content.Context;
@@ -30,7 +30,6 @@ public class LoginActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO ���������������������������
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 		
@@ -55,11 +54,9 @@ public class LoginActivity extends Activity {
 	}
 
 	private void initListeners() {
-		// TODO ���������������������������
 		mLogin.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				// TODO ���������������������������
 				// intent = getIntent();
 				// bundle = intent.getExtras();
 				// UserInfo userInfo = (UserInfo)
@@ -71,7 +68,7 @@ public class LoginActivity extends Activity {
 				UserInfo1.setPassword("123456");
 				if ((user.equals(UserInfo1.getID()) && password.equals(UserInfo1
 						.getPassword()))) {
-					Toast.makeText(LoginActivity.this, "������������!",
+					Toast.makeText(LoginActivity.this, "登录成功!",
 							Toast.LENGTH_LONG).show();
 					editor.putString("ID", user);
 					editor.putString("PASSWORD", password);
@@ -86,20 +83,20 @@ public class LoginActivity extends Activity {
 					} else {
 						editor.putBoolean("autologin", false);
 					}
+					
 					editor.commit();
 					Intent intent = new Intent(LoginActivity.this,
 							FragmentTabHostActivity.class);
 					startActivity(intent);
 				} else {
-					Toast.makeText(LoginActivity.this, "������������������������������������������������������������",
+					Toast.makeText(LoginActivity.this, "请核实您的权限并输入正确的身份证号和密码!",
 							Toast.LENGTH_LONG).show();
 				}
 			}
 		});
 	}
-
+	
 	private void initView() {
-		// TODO ���������������������������
 		editUser = (EditText) findViewById(R.id.editname);
 		editNumber = (EditText) findViewById(R.id.editnumber);
 		mLogin = (Button) findViewById(R.id.login);

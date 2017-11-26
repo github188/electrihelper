@@ -1,5 +1,5 @@
 package activity;
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

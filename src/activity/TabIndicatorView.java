@@ -1,7 +1,7 @@
 package activity;
 
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import android.content.Context;
 import android.graphics.Color;

@@ -1,6 +1,6 @@
 package activity;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 
 import android.content.Intent;
@@ -80,7 +80,7 @@ public class FragmentTabHostActivity extends FragmentActivity implements
 		chat_view.setIcon(R.drawable.focus, R.drawable.a);
 		chat_view.setIconON();
 		chat_view.setUnReadNum(0);
-		chat_view.setTitle("������");
+		chat_view.setTitle("首页");
 		chat.setIndicator(chat_view);
 		tabHost.addTab(chat, HomeFragment.class, null);
 
@@ -89,7 +89,7 @@ public class FragmentTabHostActivity extends FragmentActivity implements
 		contact_view.setIcon(R.drawable.focus, R.drawable.v);
 		contact_view.setIconOff();
 		contact_view.setUnReadNum(0);
-		contact_view.setTitle("������");
+		contact_view.setTitle("公式");
 		contact.setIndicator(contact_view);
 		tabHost.addTab(contact, FormulaFragment.class, null);
 	
@@ -98,7 +98,7 @@ public class FragmentTabHostActivity extends FragmentActivity implements
 		discover_view.setIcon(R.drawable.focus, R.drawable.ou);
 		discover_view.setIconOff();
 		discover_view.setUnReadNum(0);
-		discover_view.setTitle("������");
+		discover_view.setTitle("故障");
 		discover.setIndicator(discover_view);
 		tabHost.addTab(discover, FaultFragment.class, null);
 
@@ -107,7 +107,7 @@ public class FragmentTabHostActivity extends FragmentActivity implements
 		me_view.setIcon(R.drawable.focus, R.drawable.hz);
 		me_view.setIconOff();
 		me_view.setUnReadNum(0);
-		me_view.setTitle("������");
+		me_view.setTitle("帮助");
 		me.setIndicator(me_view);
 		tabHost.addTab(me, HelpFragment.class, null);
 

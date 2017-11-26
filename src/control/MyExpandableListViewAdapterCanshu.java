@@ -17,7 +17,7 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 public class MyExpandableListViewAdapterCanshu extends BaseExpandableListAdapter{
 	 private String[] mparentList =null;

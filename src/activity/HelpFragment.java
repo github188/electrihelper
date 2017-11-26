@@ -1,6 +1,6 @@
 package activity;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import android.support.v4.app.Fragment;
 
@@ -45,7 +45,7 @@ public class HelpFragment extends Fragment implements OnClickListener {
 		mmaintenTV.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				mIntent.setClass(getActivity(), AddWorkActivity.class);
+				mIntent.setClass(getActivity(),  MonthWorkActivity.class);
 				startActivity(mIntent);
 			}
 		});

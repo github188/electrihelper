@@ -10,7 +10,7 @@ import model.ContactInfo.InfoBean;
 import model.ManuInfo;
 import model.ManuInfo.InfoBean_manu;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import android.app.Activity;
 import android.content.Context;

@@ -15,7 +15,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.GridView;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import control.PresentGridAdapter;
 import control.SearchListAdapter;

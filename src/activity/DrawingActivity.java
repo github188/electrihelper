@@ -7,7 +7,7 @@ import java.util.List;
 
 import model.SearchResult;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import control.PresentGridAdapter;
 import control.SearchListAdapter;

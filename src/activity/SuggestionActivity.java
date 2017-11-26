@@ -2,7 +2,7 @@ package activity;
 
 import model.InforSuggestion;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import android.app.Activity;
 import android.content.Intent;

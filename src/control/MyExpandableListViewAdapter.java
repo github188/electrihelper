@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 
 import android.annotation.SuppressLint;

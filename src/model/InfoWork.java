@@ -8,12 +8,12 @@ public class InfoWork implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -5337143683221087038L;
-	private String mworkname;
-	private String mstarttime;
-	private String mkeeptime;
+	private String[] mworkname;
+	private String[] mstarttime;
+	private String[] mkeeptime;
 	
-	public InfoWork(String mworkname, String mstarttime, String mkeeptime,
-			String mcycletime, String mworkername) {
+	public InfoWork(String[] mworkname, String[] mstarttime, String[] mkeeptime,
+			String[] mcycletime, String[] mworkername) {
 		super();
 		this.mworkname = mworkname;
 		this.mstarttime = mstarttime;
@@ -22,48 +22,48 @@ public class InfoWork implements Serializable {
 		this.mworkername = mworkername;
 	}
 
-	private String mcycletime;
-	private String mworkername;
+	private String[] mcycletime;
+	private String[] mworkername;
 
 
 
-	public String getWorkname() {
+	public String[] getWorkname() {
 		return mworkname;
 	}
 
-	public void setWorkname(String workname) {
+	public void setWorkname(String[] workname) {
 		this.mworkname = workname;
 	}
 
-	public String getStarttime() {
+	public String[] getStarttime() {
 		return mstarttime;
 	}
 
-	public void setStarttime(String starttime) {
+	public void setStarttime(String[] starttime) {
 		this.mstarttime = starttime;
 	}
 
-	public String getKeeptime() {
+	public String[] getKeeptime() {
 		return mkeeptime;
 	}
 
-	public void setKeeptime(String keeptime) {
+	public void setKeeptime(String[] keeptime) {
 		this.mkeeptime = keeptime;
 	}
 
-	public String getCycletime() {
+	public String[] getCycletime() {
 		return mcycletime;
 	}
 
-	public void setCycletime(String cycletime) {
+	public void setCycletime(String[] cycletime) {
 		this.mcycletime = cycletime;
 	}
 
-	public String getWorkername() {
+	public String[] getWorkername() {
 		return mworkername;
 	}
 
-	public void setWorkername(String workername) {
+	public void setWorkername(String[] workername) {
 		this.mworkername = workername;
 	}
 }

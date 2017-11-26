@@ -1,6 +1,6 @@
 package activity;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;

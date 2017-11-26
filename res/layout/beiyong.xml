@@ -12,6 +12,7 @@
             android:layout_height="70dp"
             android:background="@drawable/icon" 
             android:paddingLeft="100dp"
+            android:visibility="gone"
             />
 
          <TextView
@@ -20,35 +21,48 @@
              android:layout_height="wrap_content"
              android:text="张冰洁"
              android:textColor="#000000"
-             android:textSize="18sp" />
+             android:textSize="18sp"
+              android:visibility="gone" />
 
         <Button
             android:id="@+id/btn_left1"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:text="@string/setting" />
+            android:text="@string/setting" 
+             android:visibility="gone"/>
 
         <Button
             android:id="@+id/btn_left2"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:text="@string/recent" />
+            android:text="@string/recent" 
+             android:visibility="gone"/>
 
         <Button
             android:id="@+id/btn_left3"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:text="@string/waitforhandle" />
+            android:text="@string/waitforhandle"
+             android:visibility="gone" />
 
         <Button
             android:id="@+id/btn_left4"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:text="@string/text" />
+            android:text="@string/text" 
+             android:visibility="gone"/>
 
         <Button
             android:id="@+id/btn_left5"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:text="@string/storehouse" />
+            android:text="@string/storehouse" 
+             android:visibility="gone"/>
+
+        <CalendarView
+            android:id="@+id/calendarView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+             android:visibility="visible"/>
+
     </LinearLayout>

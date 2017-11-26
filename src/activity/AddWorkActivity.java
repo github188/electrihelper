@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+//import model.Cache;
 import model.InfoWork;
 import model.WorkerName;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
+//import control.CacheManager;
 import control.NameGridAdapter;
 import control.NameGridAdapter.ViewHolder;
 
@@ -39,22 +41,23 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class AddWorkActivity extends Activity implements OnClickListener {
-	final String[] COUNTRIES  = new String[] { "刘庆", "邝中魁", "周伟才", "王宪天", "冯宇航",
+	final String[] COUNTRIES = new String[] { "刘庆", "邝中魁", "周伟才", "王宪天", "冯宇航",
 			"左巽", "张超", "颜莎", "吕雪", "张冰洁", "宋瑶", "李娟", "曾鹏" };
 	private EditText mEditText, editkeeptime, editcycletime;
-	private Spinner mKeepSpinner, mCycleSpinner ;
+	private Spinner mKeepSpinner, mCycleSpinner;
 	private GridView mGridView;
 	private NameGridAdapter mNameGridAdapter;
 	private List<WorkerName> mlist;
 	private Button mSave, mSelectall, mSelectnone, mSettime, mBack;
 	private Intent intent = new Intent();
 	private Bundle bundle = new Bundle();
-	private String workname, starttime, keeptime, cycletime, workername;
+	private String[] workname, starttime, keeptime, cycletime, workername;
+	private String temp;
 	private TextView mdate;
 	private int year, month, day;
 	private TextView test;
 	private int checkNum;
-	List<String> selectID = new ArrayList<String>();
+	List<String> selectID, templist = new ArrayList<String>();
 	private static String ZIDINGYI = "自定义";
 
 	@Override
@@ -144,9 +147,15 @@ public class AddWorkActivity extends Activity implements OnClickListener {
 				Toast.makeText(AddWorkActivity.this, mKeepSpinner.getItemAtPosition(pos).toString() , Toast.LENGTH_SHORT).show();
 				if (mKeepSpinner.getItemAtPosition(pos).toString().equals(ZIDINGYI)) {
 					editkeeptime.setVisibility(View.VISIBLE);
-					keeptime = editkeeptime.getText().toString();
+					temp =editkeeptime.getText().toString();
+					templist.add(temp.toString());
+					keeptime = templist.toArray(new String[templist.size()]);
+//					keeptime = editkeeptime.getText().toString();
 				} else
-					keeptime = mKeepSpinner.getItemAtPosition(pos).toString();
+//					keeptime = mKeepSpinner.getItemAtPosition(pos).toString();
+					temp =mKeepSpinner.getItemAtPosition(pos).toString();
+				templist.add(temp.toString());
+				keeptime = templist.toArray(new String[templist.size()]);
 			}
 
 			@Override
@@ -165,9 +174,15 @@ public class AddWorkActivity extends Activity implements OnClickListener {
 				Toast.makeText(AddWorkActivity.this, mCycleSpinner.getItemAtPosition(pos).toString() , Toast.LENGTH_SHORT).show();
 				if (mCycleSpinner.getItemAtPosition(pos).toString().equals(ZIDINGYI)) {
 					editcycletime.setVisibility(View.VISIBLE);
-					cycletime = editcycletime.getText().toString();
+//					cycletime = editcycletime.getText().toString();
+					temp =editcycletime.getText().toString();
+					templist.add(temp.toString());
+					cycletime = templist.toArray(new String[templist.size()]);
 				} else
-					cycletime = mCycleSpinner.getItemAtPosition(pos).toString();
+//					cycletime = mCycleSpinner.getItemAtPosition(pos).toString();
+					temp =mCycleSpinner.getItemAtPosition(pos).toString();
+				templist.add(temp.toString());
+				cycletime = templist.toArray(new String[templist.size()]);
 			}
 			
 
@@ -186,15 +201,27 @@ public class AddWorkActivity extends Activity implements OnClickListener {
 					Toast.makeText(AddWorkActivity.this, "请填写以下全部内容!",
 							Toast.LENGTH_LONG).show();
 				} else {
-					workname = String.valueOf(mEditText.getText().toString());
-					starttime = String.valueOf(mdate.getText().toString());
 					submit();
-					workername = selectID.toString();
+//					workname = String.valueOf(mEditText.getText().toString());
+//					starttime = String.valueOf(mdate.getText().toString());	
+//					workername = selectID.toString();
+					temp =mEditText.getText().toString();
+					templist.add(temp.toString());
+					workname = templist.toArray(new String[templist.size()]);
+					temp =mdate.getText().toString();
+					templist.add(temp.toString());
+					starttime = templist.toArray(new String[templist.size()]);
+					temp =selectID.toString();
+					templist.add(temp.toString());
+					workername = templist.toArray(new String[templist.size()]);
 					InfoWork info = new InfoWork(workname, starttime, keeptime,
 							cycletime, workername);
+//					Cache cache=new Cache();
+//					 CacheManager.putCacheInfo(workname, starttime, keeptime,
+//								cycletime, workername,cache,10,true);
 					bundle.putSerializable("info", info);
 					intent.putExtras(bundle);
-					intent.setClass(AddWorkActivity.this, ResultActivity.class);
+					intent.setClass(AddWorkActivity.this, WorkListActivity.class);
 					startActivity(intent);
 
 				}

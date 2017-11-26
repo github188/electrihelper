@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/paddingView2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/normal_bottomline"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:gravity="center"
+            android:text="@string/maintenance"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/back_marginleft"
+            android:background="@drawable/back" >
+        </Button>
+
+        <Button
+            android:id="@+id/checklist"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/theme"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"
+            android:layout_toRightOf="@id/theme"
+            android:background="@drawable/setting" />
+    </RelativeLayout>
+
+    <CalendarView
+        android:id="@+id/calendarView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:firstDayOfWeek="1"
+        android:focusedMonthDateColor="#000000"
+        android:selectedWeekBackgroundColor="#9BFFFF"
+        android:showWeekNumber="true"
+        android:shownWeekCount="5"
+        android:weekSeparatorLineColor="#0000FF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="当天工作任务:"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/renwu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="直流系统状况检查"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/renwu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="电测仪表定期检查"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/renwu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="电除尘滤网清灰"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="提交人员:"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/workername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/workername"
+            android:theme="@android:style/Theme.Holo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成情况:"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/situation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/finish"
+            android:theme="@android:style/Theme.Holo" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/describle"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:background="@drawable/buttonbackground"
+        android:layout_gravity="center_horizontal"
+        android:hint="工作情况描述:"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#8C8C8C"
+        android:textSize="15sp"
+        android:gravity="start" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#7FFF00"
+            android:text="提交"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:background="#EE4000"
+            android:text="重置"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -2,7 +2,7 @@ package control;
 
 import java.util.List;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import model.SearchResult;
 import android.content.Context;

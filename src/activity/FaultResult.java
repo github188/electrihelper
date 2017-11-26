@@ -7,7 +7,7 @@ import model.ContactInfo.InfoBean;
 import model.FaultInfo;
 import model.FaultInfo.ContentBean;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import activity.ContactResult.AppListAdapter;
 import activity.ContactResult.ManuTask;

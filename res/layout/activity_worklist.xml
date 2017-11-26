@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/paddingView2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/normal_bottomline"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:gravity="center"
+            android:text="日常工作清单"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/back_marginleft"
+            android:background="@drawable/back" >
+        </Button>
+
+        <Button
+            android:id="@+id/addworkbutton"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/theme"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@id/theme"
+            android:background="@drawable/thrangle" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/worklist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp" >
+    </ListView>
+
+</LinearLayout>

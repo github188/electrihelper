@@ -56,5 +56,9 @@
         <item>厂用系统短路阻抗计算公式</item>
         <item>380V继电保护计算公式</item>
     </string-array>
-
+      <string-array name="finish">
+        <item>工作提前完成</item>
+        <item>工作按时完成</item>
+        <item>工作推后完成</item>
+    </string-array>
 </resources>

@@ -8,7 +8,7 @@ import java.util.Map;
 import model.ContactInfo;
 import model.ManuInfo;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import control.MyExpandableListViewAdapter;
 

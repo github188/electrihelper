@@ -5,7 +5,7 @@ import java.util.List;
 
 import model.WorkerName;
 
-import com.example.test.R;
+import gov.huadian.electry.R;
 
 import android.R.integer;
 import android.annotation.SuppressLint;
